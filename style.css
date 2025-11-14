@@ -1,0 +1,178 @@
+/* =========================
+   ESTILO GERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+header h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+#form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#form-cadastro input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+#form-cadastro input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Botão */
+#form-cadastro button {
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#form-cadastro button:hover {
+    background: #187bcd;
+}
+
+/* =========================
+   LISTA DE CADASTRO
+========================= */
+#lista-cadastro {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#lista-cadastro li {
+    background: #f0f2f5;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+#lista-cadastro li span {
+    font-weight: 500;
+}
+
+#lista-cadastro li button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#lista-cadastro li button:hover {
+    color: #b02a37;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    #form-cadastro button {
+        font-size: 0.95rem;
+    }
+}
